@@ -1,4 +1,4 @@
-name: PureServiceOrchestator
+name: pso
 version: 1.0
 appVersion: 2.2.1
 description: Container Storage as a Service
