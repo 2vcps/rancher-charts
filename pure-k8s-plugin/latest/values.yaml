@@ -40,9 +40,9 @@ namespace:
 # support k8s or openshift
 # if you want to install flex into a different place, you need to
 # overwrite the flexpath.
-orchestrator:
+#orchestrator:
   # name is either 'k8s' or 'openshift'
-  name: k8s
+ # name: k8s
 
 # flexPath is for image.tag >= 2.0
 # `flexPath` needs to align with kubelet "volume-plugin-dir" configuration
@@ -50,7 +50,7 @@ orchestrator:
 # Select an option below or customize for the environment.
 
 # Default for Kubernetes and OpenShift on RHEL Server
-flexPath: /usr/libexec/kubernetes/kubelet-plugins/volume/exec
+#flexPath: /usr/libexec/kubernetes/kubelet-plugins/volume/exec
 
 # Default for Openshift 3.10+ on RHEL Atomic (containerized kubelet/origin-node)
 #flexPath: /etc/origin/kubelet-plugins/volume/exec
@@ -60,7 +60,10 @@ flexPath: /usr/libexec/kubernetes/kubelet-plugins/volume/exec
 
 # Default for RKE
 #flexPath: /usr/libexec/kubernetes/kubelet-plugins/volume/exec
-
+orchestrator:
+  k8s:
+    flexBaseDir: /var/lib/kubelet/volumeplugins
+    flexPath: /var/lib/kubelet/volumeplugins
 # Default for GKE
 #flexPath: /home/kubernetes/flexvolume
 
