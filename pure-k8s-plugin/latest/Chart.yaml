@@ -1,5 +1,5 @@
-name: Pure Service Orchestator
-version: 1
+name: PureServiceOrchestator
+version: 1.0
 appVersion: 2.2.1
 description: Container Storage as a Service
 icon: https://raw.githubusercontent.com/purestorage/helm-charts/master/pure-k8s-plugin/pure-storage.png
