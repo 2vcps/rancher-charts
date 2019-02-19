@@ -73,14 +73,14 @@ orchestrator:
 # The labels are optional, and can be any key-value pair for use with the "fleet"
 # provisioner. An example is shown below:
 arrays:
-  #FlashArrays:
-  #  - MgmtEndPoint: "1.2.3.4"
-  #    APIToken: "a526a4c6-18b0-a8c9-1afa-3499293574bb"
-  #    Labels:
-  #      rack: "22"
-  #      env: "prod"
-  #  - MgmtEndPoint: "1.2.3.5"
-  #    APIToken: "b526a4c6-18b0-a8c9-1afa-3499293574bb"
+  FlashArrays:
+    - MgmtEndPoint: "1.2.3.4"
+      APIToken: "a526a4c6-18b0-a8c9-1afa-3499293574bb"
+      Labels:
+        rack: "22"
+        env: "prod"
+    - MgmtEndPoint: "1.2.3.5"
+      APIToken: "b526a4c6-18b0-a8c9-1afa-3499293574bb"
   #FlashBlades:
   #  - MgmtEndPoint: "1.2.3.6"
   #    APIToken: "T-c4925090-c9bf-4033-8537-d24ee5669135"

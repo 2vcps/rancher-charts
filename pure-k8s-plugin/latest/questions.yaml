@@ -1,5 +1,8 @@
 categories:
 - Storage
+namespace: default
+labels:
+  io.rancher.certified: partner
 questions:
 - variable: namespace.pure
   default: "pure"
