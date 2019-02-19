@@ -1,21 +1,19 @@
 categories:
 - Storage
 questions:
-- variable: FlashArrays
-  default: "true"
-  description: "Use default image of K8s"
+- variable: namespace.pure
+  default: "pure"
+  description: "Pure Service Orchestrator internal Namespace"
   label: Use Default Plugin Image
-  type: boolean
-  show_subquestion_if: true
+  type: string
   group: "Pure Storage Flash Arrays"
-  subquestions:
-  - variable: arrays.FlashArrays.MgmtEndPoint
-    default: "1.2.3.4"
-    description: "Management IP"
-    type: string
-    label: "FlashArray Management IP"
-  - variable: arrays.FlashArrays.APIToken
-    default: "T-c4925090-c9bf-4033-8537-d24ee5669135"
-    description: "Pure Storage Flash Array API Token"
-    type: string
-    label: Image Tag
+- variable: arrays.FlashArrays.MgmtEndPoint
+  default: "1.2.3.4"
+  description: "Management IP from Pure Storage Flash Array or CloudBlockStore"
+  type: string
+  label: "FlashArray Management IP"
+- variable: arrays.FlashArrays.APIToken
+  default: "T-c4925090-c9bf-4033-8537-d24ee5669135"
+  description: "Pure Storage Flash Array API Token"
+  type: string
+  label: "API Token"
