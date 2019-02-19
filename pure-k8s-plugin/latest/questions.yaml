@@ -4,7 +4,7 @@ questions:
 - variable: namespace.pure
   default: "pure"
   description: "Pure Service Orchestrator internal Namespace"
-  label: Use Default Plugin Image
+  label: PSO Internal Namesapce
   type: string
   group: "Pure Storage Flash Arrays"
 - variable: arrays.FlashArrays.MgmtEndPoint
@@ -17,3 +17,4 @@ questions:
   description: "Pure Storage Flash Array API Token"
   type: string
   label: "API Token"
+  group: "Pure Storage Flash Arrays"
