@@ -1,6 +1,5 @@
 categories:
-- Plugins
-- Stuff
+- Blog
 questions:
 - variable: FlashArrays
   default: "true"
